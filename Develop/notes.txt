@@ -1,0 +1,53 @@
+Regular expressions are a sequence of characters that defines a search pattern.
+
+Rainbow is an example of literal characters. Meta characters make up regular expressions
+
+\d -> means any digit 0 through 9
+
+\w -> A through Z, a through z, and it could be 0 through 9
+
+\s -> any white space
+
+\W -> anything thats NOT a word character
+
+\S -> anything thats NOT a whitespace
+
+
+quantifier:
+. -> any character
+
+* -> 0 or more
+
+Usually used  as .*
+
++ -> 1 or more
+
+? -> 0 or 1
+
+{min, max} -> a minimum or maximum
+
+
+position:
+^ -> beginning
+
+$ -> end
+
+\b -> word boundary which is usually used as \b ... \b
+
+character classes:
+[abc] -> means a OR b OR c
+[-.] -> - OR .
+[a-z] -> a through z, - is a special character that needs to be the first thing if you want to search for a literal dash
+[^a-z] -> not a through z
+
+Alternation: 
+(net|com) -> net OR com
+
+Grouping:
+Adding paranthesis to part of the expression to then later replace or use
+
+ex. (\d{3}) 
+
+$0 -> everything
+
+$1 -> \d{3}
